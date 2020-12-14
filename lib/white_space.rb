@@ -1,5 +1,4 @@
 require_relative('./file')
-require 'colorize'
 module White_space
   def trail_space(func)
     func.each_with_index do |x, i|
