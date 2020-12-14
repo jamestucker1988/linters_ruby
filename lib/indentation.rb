@@ -1,8 +1,7 @@
 require_relative('./file')
-require('set')
 module Indentation
   def indent(func)
-    puts 'two space of indent to escape indent error'
+    puts 'two space of indent to escape indent error'.yellow
     cur_indent = 0
     c = 1
     $i = 1
