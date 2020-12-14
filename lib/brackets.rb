@@ -1,6 +1,6 @@
 require_relative('./file') 
 module Brackets 
-   def brack(func)
+   def bracket(func)
   brack_pair = {'{'=>'}','['=>']','('=>')'} 
   arr = [] 
   arr1= []
@@ -8,7 +8,7 @@ module Brackets
      line_r = line.split(' ') 
     unless line_r.empty?
     line_r.each_with_index do |char,k| 
-      puts char
+      # puts char
    char.each_char do |s,j|  
     if brack_pair.keys.include?(s) || brack_pair.values.include?(s) 
       arr.push(s) 
