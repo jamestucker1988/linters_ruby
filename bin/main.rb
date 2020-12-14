@@ -1,9 +1,10 @@
 require_relative '../lib/file'
-
+require_relative('../lib/indentation')
 require_relative('../lib/white_space')
 require 'colorize'
 class Linter
-  extend White_space
+  extend White_space 
+  extend Indentation
   File_read.new('bin/bug.rb')
 end
 Linter.trail_space(File_read.p_file('bin/bug.rb'))
