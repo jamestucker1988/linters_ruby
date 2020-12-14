@@ -14,4 +14,5 @@ end
 Linter.trail_space(File_read.p_file('bin/bug.rb'))
 Linter.indent(File_read.p_file('bin/bug.rb'))
 Linter.brack(File.readlines('bin/bug.rb'))
+Linter.bracket(File.readlines('bin/bug.rb'))
 # rubocop:enable Metrics/ModuleLength, Metrics/MethodLength, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Style/For
