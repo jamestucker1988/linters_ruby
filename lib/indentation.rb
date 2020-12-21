@@ -39,4 +39,7 @@ end
    $i += 1
       end
   end 
+  def end_num
+    $arr1
+  end
 end
