@@ -34,5 +34,14 @@ context "when end_count is called" do
     it {is_expected.to respond_to(:send).with(1).argument} 
     specify{expect{l.send(:end_number,file_attr).func.to yield_control}}
   end
-end
+end 
+describe Indentation do
+  let(:including_class) { Class.new.send(:include,Indentation).new }
+  let(:file_attr) {File.readlines('lib/bug.rb')}
+describe '#indent' do
+  it {is_expected.to respond_to(:send).with(1).argument}
+  it "main method and should return nil" do
+  expect(including_class.indent(file_attr)).to  eq(nil)
+  end 
+end 
 end 
