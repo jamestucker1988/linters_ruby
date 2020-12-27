@@ -1,4 +1,3 @@
-require_relative('./file')
 module Brackets
   def bracket(func)
     $brack_pair = { '{' => '}', '[' => ']', '(' => ')' }
