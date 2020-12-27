@@ -61,4 +61,10 @@ end
       expect($arr1).to be_an(Array)
     end 
   end 
+  describe Brackets do 
+    describe "#bracket" do
+      it {is_expected.to respond_to(:send).with(1).argument}
+      specify{expect {print('this missing bracket')}.to output.to_stdout}
+      end 
+    end
 end
