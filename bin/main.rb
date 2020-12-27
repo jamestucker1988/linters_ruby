@@ -13,7 +13,6 @@ class Linter
   include End_count1
   include Test
   include Empty_line1
-  # File_read.new('../lib/bug.rb')
 end 
 lint = Linter.new
 lint.indent(File.readlines('lib/bug.rb'))
