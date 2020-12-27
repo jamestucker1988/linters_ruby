@@ -66,5 +66,11 @@ end
       it {is_expected.to respond_to(:send).with(1).argument}
       specify{expect {print('this missing bracket')}.to output.to_stdout}
       end 
+    end 
+    describe End_count1 do 
+      describe "#end_number" do 
+        it {is_expected.to respond_to(:send).with(1).argument} 
+        specify { expect { print('unexpected end-of-input expecting end') }.to output.to_stdout }
+      end 
     end
 end
