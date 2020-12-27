@@ -1,5 +1,3 @@
-# lib/indentation.rb
-require_relative('./file')
 module Indentation
   def indent(func)
     $arr = []
