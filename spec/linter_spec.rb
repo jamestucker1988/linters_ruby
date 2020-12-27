@@ -16,4 +16,10 @@ specify{expect(l).to be_an_instance_of(Linter)}
    specify{expect(l.send(:indent,File.readlines('lib/bug.rb'))).to  be_nil }
 end 
 end 
-end
+context "when empty_line file is called" do
+  describe "#empty_line1" do
+    it {is_expected.to respond_to(:send).with(1).argument}
+    it {expect{l.send(:empty_line1,file_attr).func.to yield_control}}
+  end 
+end 
+end 
