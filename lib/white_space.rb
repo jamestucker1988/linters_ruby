@@ -1,3 +1,4 @@
+require_relative('./file')
 module White_space
   def trail_space(func)
     func.each_with_index do |x, i|

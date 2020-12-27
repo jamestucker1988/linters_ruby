@@ -1,3 +1,4 @@
+require_relative('./file')
 module Brackets
   def bracket(func)
     $brack_pair = { '{' => '}', '[' => ']', '(' => ')' }
@@ -10,7 +11,7 @@ module Brackets
           arr.push(s) if $brack_pair.keys.include?(s) || $brack_pair.values.include?(s)
         end
       end
-      puts "missing bracket at line #{_i + 1}".red  if arr.size.odd? && !line_r.empty?
+      puts 'missing bracket'  if arr.size.odd? && !line_r.empty?.red
       arr.clear
     end
 end

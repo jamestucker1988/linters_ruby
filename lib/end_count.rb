@@ -1,3 +1,4 @@
+require_relative('./file')
 module End_count1
   def end_number(keyword)
     arr = %w[def class if unless until case while begin module do]
