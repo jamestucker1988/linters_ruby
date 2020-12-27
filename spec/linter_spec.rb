@@ -22,4 +22,11 @@ context "when empty_line file is called" do
     it {expect{l.send(:empty_line1,file_attr).func.to yield_control}}
   end 
 end 
+context "when white_space file is called" do 
+  describe "#trail_space" do
+    it {is_expected.to respond_to(:send).with(1).argument} 
+    specify{expect{l.send(:trail_space,file_attr).func.to yield_control}}
+    specify{expect{ |x|  l.trail_space(file_attr).each_with_index(&x)}.to yield_control}
+  end 
+end 
 end 
