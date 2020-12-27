@@ -1,6 +1,5 @@
 require_relative('../lib/brackets')
 require_relative('../lib/white_space')
-require_relative('../lib/test')
 require_relative('../lib/end_count')
 require_relative('../lib/empty_line')
 require_relative('../lib/indentation')
@@ -10,7 +9,6 @@ class Linter
   include Indentation
   include Brackets
   include End_count1
-  include Test
   include Empty_line1
 end 
 lint = Linter.new
