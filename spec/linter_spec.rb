@@ -73,4 +73,10 @@ end
         specify { expect { print('unexpected end-of-input expecting end') }.to output.to_stdout }
       end 
     end
+    describe Empty_line1 do
+      describe "#empty_line1" do 
+        it {is_expected.to respond_to(:send).with(1).argument} 
+        specify { expect { print('empty line at #{i + 1}') }.to output.to_stdout }
+      end
+    end
 end
