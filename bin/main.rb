@@ -1,4 +1,3 @@
-require_relative '../lib/file'
 require_relative('../lib/brackets')
 require_relative('../lib/white_space')
 require_relative('../lib/test')
