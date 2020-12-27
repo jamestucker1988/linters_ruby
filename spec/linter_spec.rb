@@ -35,6 +35,7 @@ context "when end_count is called" do
     specify{expect{l.send(:end_number,file_attr).func.to yield_control}}
   end
 end 
+end
 describe Indentation do
   let(:including_class) { Class.new.send(:include,Indentation).new }
   let(:file_attr) {File.readlines('lib/bug.rb')}
@@ -44,4 +45,20 @@ describe '#indent' do
   expect(including_class.indent(file_attr)).to  eq(nil)
   end 
 end 
-end 
+describe '#indent_c' do
+  it "should return a integer" do 
+    expect(including_class.indent_c).to be_between(-2,1).exclusive
+  end 
+end
+  describe '#res_key' do 
+    it {is_expected.to respond_to(:send).with(1).argument}
+    it "should have a initialized constant $i" do
+      expect($i).to be_an(Numeric)
+    end
+  end 
+  describe '#end_num' do 
+    it "should return a array" do
+      expect($arr1).to be_an(Array)
+    end 
+  end 
+end
