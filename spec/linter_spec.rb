@@ -29,4 +29,10 @@ context "when white_space file is called" do
     specify{expect{ |x|  l.trail_space(file_attr).each_with_index(&x)}.to yield_control}
   end 
 end 
+context "when end_count is called" do 
+  describe "#end_number" do 
+    it {is_expected.to respond_to(:send).with(1).argument} 
+    specify{expect{l.send(:end_number,file_attr).func.to yield_control}}
+  end
+end
 end 
