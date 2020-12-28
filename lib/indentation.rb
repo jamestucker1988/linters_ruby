@@ -1,4 +1,3 @@
-# rubocop:disable  Metrics/MethodLength, Metrics/CyclomaticComplexity
 module Indentation
   def indent(func)
     $arr = []
@@ -51,4 +50,4 @@ end
     $arr1
   end
 end
-# rubocop:enable Metrics/ModuleLength, Metrics/MethodLength, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Style/For
+
