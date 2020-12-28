@@ -55,10 +55,6 @@ step2 Enter the name of path or file_name
 In this case a bug file resides in "lib/bug.rb" created for the reviewers to check the code,
 hence Enter lib/bug.rb at step 2.
 
-```
-
-```
-
 Running the desired file without any additional argument will ask for
 filepath or name of file.
 
