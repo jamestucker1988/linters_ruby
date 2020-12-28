@@ -9,8 +9,6 @@ require 'colorize'
 
 describe 'class Linters' do
  let(:l)  {Linter.new} 
-#  let(:s) {l.send(:size,func)}
-# let(:i) {l.i} 
 specify{expect(l).to be_an_instance_of(Linter)}
   let(:file_attr) {File.readlines('lib/bug.rb')}
  context "when indentation file is called" do
