@@ -1,3 +1,4 @@
+# rubocop:disable  Metrics/MethodLength
 module Brackets
   def bracket(func)
     $brack_pair = { '{' => '}', '[' => ']', '(' => ')' }
@@ -15,3 +16,4 @@ module Brackets
     end
 end
 end
+# rubocop:enable Metrics/ModuleLength, Metrics/MethodLength, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Style/For

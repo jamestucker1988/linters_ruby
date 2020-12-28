@@ -1,3 +1,4 @@
+# rubocop:disable  Metrics/MethodLength
 module End_count1
   def end_number(keyword)
     arr = %w[def class if unless until case while begin module do]
@@ -13,3 +14,4 @@ module End_count1
     puts 'unexpected end-of-input expecting end'.red if key_count != count
   end
 end
+# rubocop:enable Metrics/ModuleLength, Metrics/MethodLength, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Style/For

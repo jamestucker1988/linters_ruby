@@ -1,3 +1,4 @@
+# rubocop:disable  Metrics/MethodLength
 def bubble_sort(arr)
   arr.each do |i|
     i = 0
@@ -68,3 +69,4 @@ puts
 print bubble_by
 puts
 print bubble_by_test
+# rubocop:enable Metrics/ModuleLength, Metrics/MethodLength, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Style/For

@@ -5,3 +5,4 @@ module Empty_line1
     end
   end
 end
+# rubocop:enable Metrics/ModuleLength, Metrics/MethodLength, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Style/For

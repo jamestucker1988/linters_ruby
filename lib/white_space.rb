@@ -9,3 +9,4 @@ module White_space
     end
   end
 end
+# rubocop:enable Metrics/ModuleLength, Metrics/MethodLength, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Style/For
