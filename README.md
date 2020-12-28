@@ -62,11 +62,11 @@ hence Enter lib/bug.rb at step 2.
 Running the desired file without any additional argument will ask for
 filepath or name of file.
 
-![screenshot](assets/screen1.png)
+![screenshot](assets/Screen1.png)
 
 At the end of each return, the user will be informed about the number of detected cases with line number and error type,
 
-![screenshot](assets/screen.png)
+![screenshot](assets/Screen.png)
 
 <h2>Abilities</h2>
 
