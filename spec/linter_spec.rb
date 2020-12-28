@@ -1,4 +1,4 @@
-
+require_relative '../bin/main'
 require_relative('../lib/brackets')
 require_relative('../lib/white_space')
 require_relative('../lib/end_count')
@@ -6,36 +6,36 @@ require_relative('../lib/empty_line')
 require_relative('../lib/indentation')
 
 
-# describe 'class Linters' do
-#   let(:l) { Linter.new }
-#   specify { expect(l).to be_an_instance_of(Linter) }
-#   let(:file_attr) { File.readlines('lib/bug.rb') }
-#   context 'when indentation file is called' do
-#     describe '#indent' do
-#       it { is_expected.to respond_to(:send).with(1).argument }
-#       specify { expect(l.send(:indent, File.readlines('lib/bug.rb'))).to be_nil }
-#     end
-#   end
-#   context 'when empty_line file is called' do
-#     describe '#empty_line1' do
-#       it { is_expected.to respond_to(:send).with(1).argument }
-#       it { expect { l.send(:empty_line1, file_attr).func.to yield_control } }
-#     end
-#   end
-#   context 'when white_space file is called' do
-#     describe '#trail_space' do
-#       it { is_expected.to respond_to(:send).with(1).argument }
-#       specify { expect { l.send(:trail_space, file_attr).func.to yield_control } }
-#       specify { expect { |x| l.trail_space(file_attr).each_with_index(&x) }.to yield_control }
-#     end
-#   end
-#   context 'when end_count is called' do
-#     describe '#end_number' do
-#       it { is_expected.to respond_to(:send).with(1).argument }
-#       specify { expect { l.send(:end_number, file_attr).func.to yield_control } }
-#     end
-#   end
-  # end
+describe 'class Linters' do
+  let(:l) { Linter.new }
+  specify { expect(l).to be_an_instance_of(Linter) }
+  let(:file_attr) { File.readlines('lib/bug.rb') }
+  context 'when indentation file is called' do
+    describe '#indent' do
+      it { is_expected.to respond_to(:send).with(1).argument }
+      specify { expect(l.send(:indent, File.readlines('lib/bug.rb'))).to be_nil }
+    end
+  end
+  context 'when empty_line file is called' do
+    describe '#empty_line1' do
+      it { is_expected.to respond_to(:send).with(1).argument }
+      it { expect { l.send(:empty_line1, file_attr).func.to yield_control } }
+    end
+  end
+  context 'when white_space file is called' do
+    describe '#trail_space' do
+      it { is_expected.to respond_to(:send).with(1).argument }
+      specify { expect { l.send(:trail_space, file_attr).func.to yield_control } }
+      specify { expect { |x| l.trail_space(file_attr).each_with_index(&x) }.to yield_control }
+    end
+  end
+  context 'when end_count is called' do
+    describe '#end_number' do
+      it { is_expected.to respond_to(:send).with(1).argument }
+      specify { expect { l.send(:end_number, file_attr).func.to yield_control } }
+    end
+  end
+  end
   describe Indentation do
     let(:including_class) { Class.new.send(:include, Indentation).new }
     let(:file_attr) { File.readlines('lib/bug.rb') }
@@ -47,7 +47,7 @@ require_relative('../lib/indentation')
     end
     describe '#indent_c' do
       it 'should return a integer' do
-        expect(including_class.indent_c).to be_between(-2, 1).exclusive
+        expect(including_class.indent_c).to be_between(-2, 2).inclusive
       end
     end
     describe '#res_key' do
