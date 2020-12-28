@@ -1,10 +1,9 @@
 #!usr/bin/env ruby 
-require 'colorize'
 module Indentation
   def indent(func)
     $arr = []
     $arr1 = []
-    puts 'two space of indent to escape indent error'.yellow
+    puts 'two space of indent to escape indent error'
     cur_indent = 0
     line1_space = 0
     line2_space = 0
@@ -14,7 +13,7 @@ module Indentation
       $i += 1 while func[$i].empty?
       obs_indent = (line2_space - line1_space)
       if obs_indent != cur_indent
-        puts "indentation error at line  #{$i} #{cur_indent} #{line1_space},#{line2_space} " .red
+        puts "indentation error at line  #{$i} #{cur_indent} #{line1_space},#{line2_space} " 
       end
       line1_space = 0
       line2_space = 0
