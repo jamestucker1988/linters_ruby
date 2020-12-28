@@ -5,7 +5,7 @@
 <h3 align="center"> This custom code linter is the Capstone Project for the Ruby Course. The main goal is to put into practice the main concepts of Object Oriented Programming. Particularly, classes and access to their attributes.</h3>
 
 <p align="center">
-https://www.loom.com/share/3376f5d490b34dabb99676334cdd0c7f
+
 </p>
 
 <h2 align="center">How to Install</h2>
@@ -22,21 +22,13 @@ https://www.loom.com/share/3376f5d490b34dabb99676334cdd0c7f
 
 5- Write "cd" and paste the address of the folder that you unpacked the repo
 
-6- ⚠️ TO EXECUTE THE FILE WITHOUT ANY ERROR INSTALL COLORIZE GEM: ⚠️
-
-```
-
-  gem install colorize
-
-```
-
 <h3>Cloning</h3>
 
 1- Copy repo address,
 
 ```
 
-  https://github.com/SafaErden/Lintit.git
+  https://github.com/jamestucker1988/linters_ruby.git
 
 ```
 
@@ -46,15 +38,7 @@ https://www.loom.com/share/3376f5d490b34dabb99676334cdd0c7f
 
 ```
 
-  git clone https://github.com/SafaErden/Lintit.git
-
-```
-
-4- ⚠️ TO EXECUTE THE FILE WITHOUT ANY ERROR INSTALL COLORIZE GEM: ⚠️
-
-```
-
-  gem install colorize
+  git clone https://github.com/jamestucker1988/linters_ruby.git
 
 ```
 
@@ -64,41 +48,25 @@ After setting up the repo and installing the colorize gem, run the following com
 
 ```
 
-  ./bin/main.rb <filename_tocheck.rb>
+step1 ruby  bin/main.rb
+step2 Enter the name of path or file_name
+```
+
+In this case a bug file resides in "lib/bug.rb" created for the reviewers to check the code,
+hence Enter lib/bug.rb at step 2.
 
 ```
 
-In this case a sample file is created for the reviewers to check the code,
-
 ```
 
-  ./bin/main.rb sample.rb
+Running the desired file without any additional argument will ask for
+filepath or name of file.
 
-```
+![screenshot](../assets/screen1.png)
 
-Running the desired file without any additional argument will return the broken lines with line number and explanation,
+At the end of each return, the user will be informed about the number of detected cases with line number and error type,
 
-![screenshot](./assets/first_call.PNG)
-
-At the end of each return, the user will be informed about the number of detected cases,
-
-![screenshot](./assets/first_result.PNG)
-
-To fix the detected errors, add fix keyword after the filename
-
-```
-
-  ./bin/main.rb sample.rb fix
-
-```
-
-Using fix command will fix the detected cases and inform the user about progress with [CORRECTED] info,
-
-![screenshot](./assets/fix.PNG)
-
-In this case, user also will be informed about the total fixed cases,
-
-![screenshot](./assets/fix_result.PNG)
+![screenshot](../assets/screen.png)
 
 <h2>Abilities</h2>
 
@@ -118,51 +86,13 @@ end
 
 ```
 
-2. Check and fix the line between methods : Use empty lines between method definitions and also to break up methods into logical paragraphs internally.
+2. Check the line between methods : Use empty lines between two lines is forbidden.
 
-3. Check the line length : Limit lines to 50 characters.
+3. Check for missing brackets.
 
-4. Check the number of classes/modules per page : Aim to have just a single class/module per source file.
+4. Check for end of statement and inform.
 
-5. Check and fix the semi colon misusage : Don’t use ; to terminate statements and expressions.
-
-```
-
-# bad
-puts 'foobar'; # superfluous semicolon
-
-# good
-puts 'foobar'
-
-```
-
-6. Chceck and fix the spaces after bang : 'No space after !.
-
-```
-
-# bad
-! something
-
-# good
-!something
-
-```
-
-7. Chceck and fix the spaces aruond braces : No spaces after (, [ or before ], ). Use spaces around { and before }.
-
-```
-
-# bad
-some( arg ).other
-[ 1, 2, 3 ].each{|e| puts e}
-
-# good
-some(arg).other
-[1, 2, 3].each { |e| puts e }
-
-```
-
-8. Chceck and fix the white spaces : Avoid trailing whitespace.
+5. Chceck and fix the white spaces : Avoid trailing whitespace.
 
 ---
 
@@ -173,11 +103,11 @@ some(arg).other
 
 ## ✒️ Autor <a name = "author"></a>
 
-👤 **Safa ERDEN**
+👤 **Anand Kumar**
 
-- Github: [@SafaErden](https://github.com/SafaErden)
-- Twitter: [@safaerden](https://twitter.com/safaerden)
-- Linkedin: [@safaerden](https://www.linkedin.com/in/safaerden/)
+[<code><img height="26" src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png"></code>](https://github.com/jamestucker1988)
+[<code><img height="26" src="https://upload.wikimedia.org/wikipedia/sco/thumb/9/9f/Twitter_bird_logo_2012.svg/1200px-Twitter_bird_logo_2012.svg.png"></code>](https://twitter.com/anandku74070598)
+[<code><img height="26" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Linkedin.svg/1200px-Linkedin.svg.png"></code>](https://www.linkedin.com/in/anand-kumar-912878189/)
 
 ## 🤝 Contributing
 
