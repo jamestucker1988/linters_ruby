@@ -26,7 +26,7 @@ module Indentation
   def indent_c
     arr = %w[def class if unless until case while begin module do]
     arr2 = %w[else end elsif]
-    if arr.include?($arr1[$i-1]) || (arr2.include?($arr1[$i-1]) && $arr1[$i-1] != 'end')
+    if arr.include?($arr1[$i - 1]) || (arr2.include?($arr1[$i - 1]) && $arr1[$i - 1] != 'end')
       cur_indent = 2
     elsif arr2.include?($arr1[$i]) && !arr.include?($arr1[$i - 1])
       cur_indent = -2

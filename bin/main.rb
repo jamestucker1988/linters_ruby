@@ -10,7 +10,7 @@ class Linter
   include Brackets
   include End_count1
   include Empty_line1
-end 
+end
 lint = Linter.new
 lint.indent(File.readlines('lib/bug.rb'))
 lint.bracket(File.readlines('lib/bug.rb'))

@@ -10,9 +10,10 @@ def bubble_sort(arr)
   if 1
     puts 'x'
   else 0
-    puts 'y'
+       puts 'y'
   end
 end
+
 def bubble_sort_by(arr)
   arr.each do
     i = 0
@@ -44,9 +45,10 @@ def bubble_sort(arr)
   if 1
     puts 'x'
   else 0
-    puts 'y'
+       puts 'y'
   end
 end
+
 def bubble_sort_by(arr)
   arr.each do
     i = 0
