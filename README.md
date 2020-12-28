@@ -62,15 +62,15 @@ hence Enter lib/bug.rb at step 2.
 Running the desired file without any additional argument will ask for
 filepath or name of file.
 
-![screenshot](../assets/screen1.png)
+![screenshot](assets/screen1.png)
 
 At the end of each return, the user will be informed about the number of detected cases with line number and error type,
 
-![screenshot](../assets/screen.png)
+![screenshot](assets/screen.png)
 
 <h2>Abilities</h2>
 
-1. Check and fix the indentation misusage : Use two spaces per indentation level (aka soft tabs).
+1. Check the indentation misusage : Use two spaces per indentation level .
 
 ```
 
@@ -113,7 +113,7 @@ end
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/SafaErden/Lintit/issues).
+Feel free to check the [issues page](https://github.com/jamestucker1988/linters_ruby/issues).
 
 ## 👍 Show your support
 
