@@ -12,12 +12,14 @@ class Linter
   include Brackets
   include End_count1
   include Empty_line1 
-  def initialize
-    puts "enter file_path or name"
-    @file_name =  gets.chomp
+  def initialize(file_name)
+    
+    @file_name =  file_name
   end
 end
-lint = Linter.new 
+puts "enter file_path or name" 
+
+lint = Linter.new(gets.chomp)
 lint.indent(File.readlines("#{lint.file_name}"))
 lint.bracket(File.readlines("#{lint.file_name}"))
 key_word = lint.end_num
