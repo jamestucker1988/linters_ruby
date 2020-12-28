@@ -4,8 +4,6 @@ require_relative('../lib/white_space')
 require_relative('../lib/end_count')
 require_relative('../lib/empty_line')
 require_relative('../lib/indentation')
-require 'colorize'
-
 describe 'class Linters' do
   let(:l) { Linter.new }
   specify { expect(l).to be_an_instance_of(Linter) }
