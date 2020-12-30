@@ -1,10 +1,4 @@
 require_relative('../bin/main')
-require_relative('../lib/brackets')
-require_relative('../lib/white_space')
-require_relative('../lib/end_count')
-require_relative('../lib/empty_line')
-require_relative('../lib/indentation')
-
 RSpec.describe Linter do
   let(:lint) { Linter.new }
   let(:file_attr) { File.readlines('lib/bug.rb') }
