@@ -3,7 +3,7 @@ module White_space
     func.each_with_index do |x, i|
       if i < (func.size - 1)
         puts "trailing white_space at  line #{i + 1} " if x.match?(/\s+\n/)
-      else 
+      else
         puts "trailing white_space at  line #{i + 1} " if x.match?(/\s+$/)
       end
     end

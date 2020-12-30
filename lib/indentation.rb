@@ -1,4 +1,4 @@
-#!usr/bin/env ruby 
+#!usr/bin/env ruby
 module Indentation
   def indent(func)
     $arr = []
@@ -13,7 +13,7 @@ module Indentation
       $i += 1 while func[$i].empty?
       obs_indent = (line2_space - line1_space)
       if obs_indent != cur_indent
-        puts "indentation error at line  #{$i} #{cur_indent} #{line1_space},#{line2_space} " 
+        puts "indentation error at line  #{$i} #{cur_indent} #{line1_space},#{line2_space} "
       end
       line1_space = 0
       line2_space = 0

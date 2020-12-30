@@ -6,9 +6,6 @@ require_relative('../lib/empty_line')
 require_relative('../lib/indentation')
 
 RSpec.describe Linter do
-  # f = ARGV[0]
-  # abort "filename required" unless f
-
   let(:lint) { Linter.new }
   let(:file_attr) { File.readlines('lib/bug.rb') }
   context 'when indentation file is called' do

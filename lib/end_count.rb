@@ -11,7 +11,7 @@ module End_count1
         key_count += 1
       end
     end
-    puts 'unexpected end-of-input expecting end'.red if key_count != count
+    puts 'unexpected end-of-input expecting end' if key_count != count
   end
 end
 # rubocop:enable Metrics/ModuleLength, Metrics/MethodLength, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Style/For
