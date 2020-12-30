@@ -11,7 +11,7 @@ module Brackets
           arr.push(s) if $brack_pair.keys.include?(s) || $brack_pair.values.include?(s)
         end
       end
-      puts 'missing bracket' if arr.size.odd? && !line_r.empty?.red
+      puts 'missing bracket' if arr.size.odd? && !line_r.empty?
       arr.clear
     end
 end
