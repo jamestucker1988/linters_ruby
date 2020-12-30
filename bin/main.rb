@@ -9,15 +9,15 @@ class Linter
   include Indentation
   include Brackets
   include End_count1
-  include Empty_line1 
+  include Empty_line1
   def initialize
-   ARGV[0].nil? ? @file_name = 'lib/bug.rb'  : @file_name =  ARGV[0]
+    @file_name = ARGV[0].nil? ? 'lib/bug.rb' : ARGV[0]
   end
 end
 
- lint = Linter.new 
- lint.indent(File.readlines(lint.file_name))
- lint.bracket(File.readlines(lint.file_name))
+lint = Linter.new
+lint.indent(File.readlines(lint.file_name))
+lint.bracket(File.readlines(lint.file_name))
 key_word = lint.end_num
- lint.end_number(key_word)
- lint.empty_line1(File.readlines(lint.file_name))
+lint.end_number(key_word)
+lint.empty_line1(File.readlines(lint.file_name))
