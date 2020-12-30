@@ -1,19 +1,17 @@
-require_relative '../bin/main'
+require_relative('../bin/main') 
 require_relative('../lib/brackets')
 require_relative('../lib/white_space')
 require_relative('../lib/end_count')
 require_relative('../lib/empty_line')
 require_relative('../lib/indentation')
 
-
-describe 'class Linters' do
-  let(:l) { Linter.new }
-  specify { expect(l).to be_an_instance_of(Linter) }
+describe 'Linter' do
+  let(:lint) {Linter.new}
   let(:file_attr) { File.readlines('lib/bug.rb') }
   context 'when indentation file is called' do
     describe '#indent' do
       it { is_expected.to respond_to(:send).with(1).argument }
-      specify { expect(l.send(:indent, File.readlines('lib/bug.rb'))).to be_nil }
+      specify { expect(lint.send(:indent, file_attr)).to be_nil }
     end
   end
   context 'when empty_line file is called' do
@@ -25,8 +23,8 @@ describe 'class Linters' do
   context 'when white_space file is called' do
     describe '#trail_space' do
       it { is_expected.to respond_to(:send).with(1).argument }
-      specify { expect { l.send(:trail_space, file_attr).func.to yield_control } }
-      specify { expect { |x| l.trail_space(file_attr).each_with_index(&x) }.to yield_control }
+      specify { expect { lint.send(:trail_space, file_attr).func.to yield_control } }
+      specify { expect { |x| lint.trail_space(file_attr).each_with_index(&x) }.to yield_control }
     end
   end
   context 'when end_count is called' do
