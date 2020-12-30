@@ -1,4 +1,4 @@
-require_relative('../bin/main')
+require('./bin/main')
 RSpec.describe Linter do
   let(:lint) { Linter.new }
   let(:file_attr) { File.readlines('lib/bug.rb') }
