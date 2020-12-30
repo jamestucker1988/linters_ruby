@@ -48,19 +48,15 @@ After setting up the repo and installing the colorize gem, run the following com
 
 ```
 
-step1 ruby  bin/main.rb
-step2 Enter the name of path or file_name
+step1 ruby  bin/main.rb <name or path of the file>
 ```
 
 In this case a bug file resides in "lib/bug.rb" created for the reviewers to check the code,
-hence Enter lib/bug.rb at step 2.
-
-Running the desired file without any additional argument will ask for
-filepath or name of file.
+hence Enter lib/bug.rb.
 
 ![screenshot](assets/linter.png)
 
-At the end of each return, the user will be informed about the number of detected cases with line number and error type,
+At the end of each run, the user will be informed about the number of detected cases with line number and error type,
 
 ![screenshot](assets/linter1.png)
 
@@ -82,13 +78,13 @@ end
 
 ```
 
-2. Check the line between methods : Use empty lines between two lines is forbidden.
+2. Check the line between methods : Use of empty lines between two lines is forbidden.
 
 3. Check for missing brackets.
 
 4. Check for end of statement and inform.
 
-5. Chceck and fix the white spaces : Avoid trailing whitespace.
+5. Check the white spaces : Avoid trailing whitespace.
 
 ---
 
