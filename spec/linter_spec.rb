@@ -1,4 +1,4 @@
-require('./bin/main')
+require_relative('../bin/main')
 require_relative('../lib/brackets')
 require_relative('../lib/white_space')
 require_relative('../lib/end_count')
