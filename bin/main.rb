@@ -24,4 +24,3 @@ lint.bracket(File.readlines(ARGV[0]))
 key_word = lint.end_num
 lint.end_number(key_word)
 lint.empty_line1(File.readlines(ARGV[0]))
-# puts lint.ARGV[2]
