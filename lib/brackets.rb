@@ -14,6 +14,6 @@ module Brackets
       puts 'missing bracket' if arr.size.odd? && !line_r.empty?
       arr.clear
     end
-end
+  end
 end
 # rubocop:enable Metrics/ModuleLength, Metrics/MethodLength, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Style/For
