@@ -1,4 +1,3 @@
-#!usr/bin/env ruby
 require_relative('../lib/brackets')
 require_relative('../lib/white_space')
 require_relative('../lib/end_count')
@@ -13,14 +12,14 @@ class Linter
   include End_count1
   include Empty_line1 
   def initialize
-    @file_name =  ARGV[0]
+    @file_name =  ARGV[0].to_s
   end
 end
 
 
 lint = Linter.new
-lint.indent(File.readlines(ARGV[0]))
-lint.bracket(File.readlines(ARGV[0]))
+lint.indent(File.readlines(lint.file_name))
+lint.bracket(File.readlines(lint.file_name))
 key_word = lint.end_num
 lint.end_number(key_word)
-lint.empty_line1(File.readlines(ARGV[0]))
+lint.empty_line1(File.readlines(lint.file_name))
