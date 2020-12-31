@@ -11,8 +11,8 @@ class Linter
   include End_count1
   include Empty_line1
   def initialize(name = 'lib/bug.rb' )
-    @file_name = ARGV[0]
-    @file_name = name unless ARGV[0]
+    @file_name = 'lib/bug.rb'
+    @file_name   = ARGV[0] unless ARGV[0].nil?
   end
 end
 
