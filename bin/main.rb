@@ -12,7 +12,7 @@ class Linter
   include Empty_line1
   def initialize(name = 'lib/bug.rb' )
     @file_name = 'lib/bug.rb'
-    @file_name   = ARGV[0] unless ARGV[0].nil?
+    # @file_name   = ARGV[0] if ARGV.first
   end
 end
 
