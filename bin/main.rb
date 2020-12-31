@@ -10,9 +10,9 @@ class Linter
   include Brackets
   include End_count1
   include Empty_line1
-  def initialize
-    # @file_name = ARGV[0].nil? ? 'lib/bug.rb' : ARGV[0]
-    @file_name = 'lib/bug.rb'
+  def initialize(name = 'lib/bug.rb' )
+    @file_name = ARGV[0]
+    @file_name = name unless ARGV[0]
   end
 end
 
