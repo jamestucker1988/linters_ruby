@@ -1,12 +1,31 @@
 require('./bin/main')
 RSpec.describe Linter do
-  let(:lint) { Linter.new }
+  let(:lint) { Linter.new(file_attr) }
   let(:file_attr) { File.readlines('lib/bug.rb') }
   context 'when indentation file is called' do
-    describe '#indent' do
+    describe '#indent' do 
       it { is_expected.to respond_to(:send).with(1).argument }
       specify { expect(lint.send(:indent, file_attr)).to be_nil }
+  context "when $i is less than func.size " do 
+    before(:each) do 
+      indent = double()
+      allow(indent).to receive(:indent_c) 
+      allow(lint).to receive(:puts) {"indentation error at line  #{$i} #{lint.indent.cur_indent} #{lint.indent.line1_space},#{lint.indent.line2_space} " }
+     end
+    context "when func[$i] is empty" do
+    it "increments $i by one" do
+      expect{$i}.to change{$i}.by (0) 
     end
+    end 
+    context "when func[$i] is not empty" do 
+      describe "when cur_indent is not equal to obs_indent" do 
+        it {expect(:indent).to_not eql(:indent_c)} 
+       
+      end
+      
+    end
+  end
+  end
   end
   context 'when empty_line file is called' do
     describe '#empty_line1' do
@@ -52,7 +71,6 @@ describe Indentation do
     it 'should return a array' do
       expect($arr1).to be_an(Array)
     end
-    # end
   end
   describe Brackets do
     describe '#bracket' do
@@ -73,3 +91,4 @@ describe Indentation do
     end
   end
 end
+

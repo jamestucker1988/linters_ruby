@@ -35,7 +35,7 @@ module Indentation
       cur_indent = 0
     end
     cur_indent
-end
+  end
 
   def res_key(func)
     $i = 0
