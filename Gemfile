@@ -1,3 +1,3 @@
-source 'https://rubygems.org' do
+source 'https://rubygems.org'
+
   gem 'rspec'
-end
