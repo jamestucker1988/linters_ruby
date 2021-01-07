@@ -110,7 +110,3 @@ Feel free to check the [issues page](https://github.com/jamestucker1988/linters_
 ## 👍 Show your support
 
 Give a ⭐️ if you like this project!
-
-## 📝 License
-
-This project is free to use as learning purposes. For any external content (e.g. logo, images, ...), please contact.
