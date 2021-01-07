@@ -1,5 +1,4 @@
 require 'rubygems'
-require 'bundler/setup'
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 gem 'rspec'
 gem 'rubocop', '~>0.81.0'
