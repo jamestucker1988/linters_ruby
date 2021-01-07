@@ -1,4 +1,3 @@
-# bubble_sort
 def bubble_sort(arr)
   i = 0
   while i < arr.length
@@ -11,7 +10,7 @@ def bubble_sort(arr)
   end
   arr
 end
-y = bubble_sort([1, 3, 5, 7,9])
+y = bubble_sort([1, 3, 5, 7, 9])
 puts y
 # bubble_sort_by
 def bubble_sort_by(arr)
@@ -20,7 +19,11 @@ def bubble_sort_by(arr)
     x = i + 1
     (x..(arr.length - 1)).each do |y|
       c = yield(arr[i], arr[y])
-      arr[y], arr[i] = arr[i], arr[y] if c.positive?
+      if c.positive?
+        arr[y], arr[i] = arr[i], arr[y]
+      else
+        c = 0
+      end
     end
     i += 1
   end
@@ -30,4 +33,3 @@ end
 y = bubble_sort_by(%w[hi greetings hello salutations hey]) do |left, right|
   left.length - right.length
 end
-print y
