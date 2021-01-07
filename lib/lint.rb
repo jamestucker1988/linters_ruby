@@ -66,16 +66,16 @@ class Linter
     indent_calc(i, arr1)
   end
 
-  def indent_call(c)
-    raise "indentation error at line #{c - 1}" unless f_edit[-1] =~ /^end$/
+  def indent_call(i)
+    raise "indentation error at line #{i}" unless f_edit[-1] =~ /^end$/
   end
 
   def indent_calc(i, arr1)
     obs = 0
     c = f_edit.size
     until i == c - 1
-      cur = indent_c(arr1, i).abs
-      raise "indentation error at line  #{i + 1}" if obs != cur
+      cur = indent_c(arr1, i)
+      raise "indentation error at line #{i + 1}" if obs != cur
       obs = line_cal(i)
       i += 1 if i < c - 1
     end
@@ -87,7 +87,7 @@ class Linter
     line2 = 0
     f_edit[i].each_char { |c| c == ' ' ? line2 += 1 : break }
     f_edit[i + 1].each_char { |c| c == ' ' ? line1 += 1 : break }
-    (line2 - line1).abs
+    (line1 - line2)
   end
 
   def arrin?(arr1, i)
@@ -127,9 +127,9 @@ class Linter
   end
 end
 lint = Linter.new
-lint.indent
 lint.bracket
 key_word = lint.res_key
 lint.end_number(key_word)
 lint.empty_line1
 lint.trail_space
+lint.indent
