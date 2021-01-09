@@ -1,4 +1,3 @@
 source 'https://rubygems.org'
-# require 'rubygems'
 gem 'rspec'
-gem 'rubocop', '~>0.80.0'
+gem 'rubocop', '~>0.81.0', require: false
