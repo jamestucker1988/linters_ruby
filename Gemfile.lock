@@ -35,14 +35,10 @@ GEM
 
 PLATFORMS
   ruby
-  x86_64-linux
 
 DEPENDENCIES
   rspec (~> 3.10)
   rubocop (~> 0.81.0)
 
-RUBY VERSION
-   ruby 2.6.6p146
-
 BUNDLED WITH
-   2.2.4
+   2.1.4
