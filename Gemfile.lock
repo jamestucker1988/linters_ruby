@@ -34,14 +34,14 @@ GEM
     unicode-display_width (1.7.0)
 
 PLATFORMS
-  ruby
+  x86_64-linux
 
 DEPENDENCIES
   rspec (~> 3.10)
   rubocop (~> 0.81.0)
 
 RUBY VERSION
-   ruby 2.7.0p0
+   ruby 2.6.6p146
 
 BUNDLED WITH
-   2.1.4
+   2.2.4
