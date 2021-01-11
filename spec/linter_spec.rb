@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require('./bin/main')
 RSpec.describe Linter do
   let(:lint) { Linter.new('bug.rb') }
