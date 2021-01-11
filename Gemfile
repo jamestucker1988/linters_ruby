@@ -5,3 +5,5 @@ source 'https://rubygems.org'
 # gem "rails"
 # gem 'rspec'
 # gem 'rubocop', '~>0.81.0'
+
+gem "rspec", "~> 3.10"
