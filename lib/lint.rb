@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # bin/main/env ruby
 class Linter
   attr_accessor :file_name, :new_file, :line2, :line1, :arb
