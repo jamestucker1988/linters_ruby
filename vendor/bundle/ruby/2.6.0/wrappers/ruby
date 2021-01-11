@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+if
+  [[ -s "/home/kumar/Desktop/microverse-project/linters_ruby/vendor/bundle/ruby/2.6.0/environment" ]]
+then
+  source "/home/kumar/Desktop/microverse-project/linters_ruby/vendor/bundle/ruby/2.6.0/environment"
+  exec ruby "$@"
+else
+  echo "ERROR: Missing RVM environment file: '/home/kumar/Desktop/microverse-project/linters_ruby/vendor/bundle/ruby/2.6.0/environment'" >&2
+  exit 1
+fi

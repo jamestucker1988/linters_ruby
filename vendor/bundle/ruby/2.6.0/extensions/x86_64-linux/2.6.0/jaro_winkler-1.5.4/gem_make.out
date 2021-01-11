@@ -1,5 +1,5 @@
 current directory: /home/kumar/Desktop/microverse-project/linters_ruby/vendor/bundle/ruby/2.6.0/gems/jaro_winkler-1.5.4/ext/jaro_winkler
-/home/kumar/.rvm/rubies/ruby-2.6.6/bin/ruby -I /home/kumar/.rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0 -r ./siteconf20210112-38880-1hy1g2n.rb extconf.rb
+/home/kumar/.rvm/rubies/ruby-2.6.6/bin/ruby -r ./siteconf20210112-40822-hc4a2t.rb extconf.rb
 creating Makefile
 
 current directory: /home/kumar/Desktop/microverse-project/linters_ruby/vendor/bundle/ruby/2.6.0/gems/jaro_winkler-1.5.4/ext/jaro_winkler
@@ -80,4 +80,4 @@ linking shared-object jaro_winkler/jaro_winkler_ext.so
 
 current directory: /home/kumar/Desktop/microverse-project/linters_ruby/vendor/bundle/ruby/2.6.0/gems/jaro_winkler-1.5.4/ext/jaro_winkler
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 jaro_winkler_ext.so ./.gem.20210112-38880-1w14pxi/jaro_winkler
+/usr/bin/install -c -m 0755 jaro_winkler_ext.so ./.gem.20210112-40822-1b18a3s/jaro_winkler
