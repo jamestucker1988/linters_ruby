@@ -60,6 +60,10 @@ At the end of each run, the user will be informed about the number of detected c
 
 ![screenshot](assets/linter1.png)
 
+<h2>how to install bundle</h2>
+1. use 'gem install bundle<version no>'
+2. run 'bundler' or 'bundle install'
+
 <h2>Abilities</h2>
 
 1. Check the indentation misusage : Use two spaces per indentation level .
@@ -78,13 +82,68 @@ end
 
 ```
 
-2. Check the line between methods : Use of empty lines between two lines is forbidden.
+2. Check the line between methods : Use of atmost 1 empty lines between two lines is permissible.
+
+```
+
+ # bad - more than 1 line
+def some_method
+
+
+    do_something
+end
+
+# good 1 line between
+def some_method
+
+  do_something
+
+end
+
+```
 
 3. Check for missing brackets.
 
-4. Check for end of statement and inform.
+```
+ # bad - incomplete bracket or missing bracket
+def some_method(para1
+    do_something
+end
+
+# good
+def some_method(para1)
+do_something
+end
+```
+
+4. Check for end of statement and inform
+
+```
+ # bad - extra end or missing end
+def some_method(para1)
+    do_something
+end
+end
+
+# good all statements have a end
+def some_method(para1)
+do_something
+end
+```
 
 5. Check the white spaces : Avoid trailing whitespace.
+
+```
+ # bad -  trailing white spaces
+def some_method(para1)
+    do_something
+end
+
+# good - no trailing space
+def some_method(para1)
+do_something
+end
+```
 
 ---
 
